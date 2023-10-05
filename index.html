@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ٍSurvey Form of FreeCodeCamp Project</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <!-- This try to make form like FreeCodeCamp -->
@@ -14,18 +14,18 @@
         <h1>FreeCodeCamp Survey Form</h1>
         <p>Thank you for taking the time to help us improve the platform</p>
       </div>
-      <form action="">
+      <form action="https://www.freecodecamp.org/learn" method="post">
         <div class="name">
           <label for="">Name</label>
-          <input type="text" placeholder="Name"/>
+          <input required type="text" placeholder="Name" />
         </div>
         <div class="email">
           <label for="">Email</label>
-          <input type="text" placeholder="Email" />
+          <input required type="email" placeholder="Email" />
         </div>
         <div class="age">
           <label for="">Age <span>(optional)</span></label>
-          <input type="text" placeholder="Age"/>
+          <input type="number" min="10" max="90" placeholder="Age" />
         </div>
         <div class="role">
           <p>Which option best describes your current role?</p>
@@ -41,18 +41,24 @@
         <div class="recommend">
           <p>Would you recommend freeCodeCamp to a friend?</p>
           <div class="radio">
-            <input type="radio" name="recommmend-answer" /><label for="">Definitly</label>
+            <input type="radio" name="recommmend-answer" /><label for=""
+              >Definitly</label
+            >
           </div>
           <div class="radio">
-            <input type="radio" name="recommmend-answer"/><label for="">Maybe</label>
+            <input type="radio" name="recommmend-answer" /><label for=""
+              >Maybe</label
+            >
           </div>
           <div class="radio">
-            <input type="radio"name="recommmend-answer" /><label for="">Not sure</label>
+            <input type="radio" name="recommmend-answer" /><label for=""
+              >Not sure</label
+            >
           </div>
         </div>
         <div class="choose">
           <p>What is your favorite feature of freeCodeCamp?</p>
-          <select name="" id="">
+          <select required name="" id="">
             <option selected disabled>Select an Option</option>
             <option value="">Challenges</option>
             <option value="">Projects</option>
@@ -106,15 +112,21 @@
         </div>
         <div class="text-area">
           <p>Any comments or suggestions?</p>
-          <textarea placeholder="Enter your comments here..... ." name="" id="" cols="30" rows="10"></textarea>
+          <textarea
+            placeholder="Enter your comments here..... ."
+            name=""
+            id=""
+            cols="30"
+            rows="10"
+          ></textarea>
         </div>
         <div class="submit-button">
           <button type="submit">Submit</button>
         </div>
       </form>
     </div>
-    <footer><p>
-      All Rights are Reserved <a href="">Abu Muslim</a>
-    </p></footer>
+    <footer>
+      <p>All Rights are Reserved <a href="">Abu Muslim</a></p>
+    </footer>
   </body>
 </html>
